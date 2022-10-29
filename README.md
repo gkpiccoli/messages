@@ -1,6 +1,6 @@
-# questions
+# Messages APP
 
-A new Flutter project.
+The app shows some messages in the display, when clicked, interact with you.
 
 ## Getting Started
 
