@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Messages - Flutter',
+      title: 'Messages App - What u are meaning'
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
