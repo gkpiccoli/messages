@@ -1,17 +1,20 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
-main() => runApp(MsgApp());
+main() => runApp(const MsgApp());
 
 class MsgApp extends StatelessWidget {
+  const MsgApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(appBar: AppBar(actions: [ElevatedButton(
-        child: const Text('Button label'),
-        onPressed: () {},
-      )],)),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Mensagens'),
+        ),
+        body: const Text('Aplicativo de mensagens no Flutter!'), 
+      ),
     );
   }
 }
