@@ -26,5 +26,5 @@ in the directory, open a terminal and input:
   ```
 - [X]  make the app;
 - [x] insert buttons;
-- [] add flex container;
+- [] add a beautiful layout;
 - [] animate buttons when pressed; 
