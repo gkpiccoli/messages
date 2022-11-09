@@ -14,6 +14,17 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-- [X]  make the app
-- [] insert buttons
-- [] animate buttons when pressed 
+
+
+### How to install: 
+
+ clone the repo app;
+in the directory, open a terminal and input:
+
+  ```console
+  $ flutter run
+  ```
+- [X]  make the app;
+- [x] insert buttons;
+- [] add a beautiful layout;
+- [] animate buttons when pressed; 
