@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 main() => runApp(const MsgApp());
@@ -29,15 +28,15 @@ class MsgApp extends StatelessWidget {
           children: <Widget>[
             Text(perguntas[0]),
             const ElevatedButton(
-              onPressed: resposta(),
+              onPressed: null,
               child: Text('Resposta 1'),
             ),
             const ElevatedButton(
-              onPressed: resposta,
+              onPressed: null,
               child: Text('Resposta 2'),
             ),
             const ElevatedButton(
-              onPressed: resposta,
+              onPressed: null,
               child: Text('Resposta 3 '),
             ),
           ],
