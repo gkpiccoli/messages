@@ -7,7 +7,14 @@ class MsgApp extends StatelessWidget {
 
   void resposta() {
     // ignore:avoid_print
-    print('Pergunta Respondida');
+    print('Mensagem Respondida');
+  }
+
+  void Function() retornaOutra() {
+    return (() {
+      // ignore: avoid_print
+      print('Resposta #02');
+    });
   }
 
   @override
@@ -25,19 +32,22 @@ class MsgApp extends StatelessWidget {
           title: const Text('Mensagens'),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          verticalDirection: VerticalDirection.up,
           children: <Widget>[
             Text(perguntas[0]),
-            const ElevatedButton(
-              onPressed: null,
-              child: Text('Resposta 1'),
+            ElevatedButton(
+              onPressed: resposta,
+              child: const Text('Resposta 1'),
             ),
-            const ElevatedButton(
-              onPressed: null,
-              child: Text('Resposta 2'),
+            ElevatedButton(
+              onPressed: resposta,
+              child: const Text('Resposta 2'),
             ),
-            const ElevatedButton(
-              onPressed: null,
-              child: Text('Resposta 3 '),
+            ElevatedButton(
+              onPressed: retornaOutra(),
+              child: const Text('Resposta 3 '),
             ),
           ],
         ),
