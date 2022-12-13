@@ -2,12 +2,23 @@ import 'package:flutter/material.dart';
 
 main() => runApp(const MsgApp());
 
-class MsgApp extends StatelessWidget {
+class MsgApp extends StatefulWidget {
   const MsgApp({super.key});
 
+  @override
+  State<MsgApp> createState() => _MsgAppState();
+}
+
+class _MsgAppState extends State<MsgApp> {
+  var perguntaSelecionada = 0; // classe state
+
   void resposta() {
-    // ignore:avoid_print
-    print('Mensagem Respondida');
+    setState(() {
+      perguntaSelecionada++;
+    });
+
+    // ignore: avoid_print
+    print(perguntaSelecionada); // metodo
   }
 
   void Function() retornaOutra() {
@@ -36,7 +47,7 @@ class MsgApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           verticalDirection: VerticalDirection.up,
           children: <Widget>[
-            Text(perguntas[0]),
+            Text(perguntas[perguntaSelecionada]),
             ElevatedButton(
               onPressed: resposta,
               child: const Text('Resposta 1'),
@@ -46,7 +57,7 @@ class MsgApp extends StatelessWidget {
               child: const Text('Resposta 2'),
             ),
             ElevatedButton(
-              onPressed: retornaOutra(),
+              onPressed: resposta,
               child: const Text('Resposta 3 '),
             ),
           ],
