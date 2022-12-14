@@ -28,3 +28,4 @@ in the directory, open a terminal and input:
 - [x] insert buttons;
 - [] add a beautiful layout;
 - [] animate buttons when pressed; 
+- [] make app responsive
