@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'question.dart';
 
 main() => runApp(const MsgApp());
 
@@ -43,9 +44,6 @@ class _MsgAppState extends State<MsgApp> {
           title: const Text('Mensagens'),
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          verticalDirection: VerticalDirection.up,
           children: <Widget>[
             Text(perguntas[perguntaSelecionada]),
             ElevatedButton(

@@ -1,12 +1,17 @@
-import 'package:flutter/cupertino.dart';
- 
+import 'package:flutter/material.dart';
 
 class Questao extends StatelessWidget {
-  const Questao({super.key});
+
+  final String resposta;
+
+  const Questao({super.key, required this.resposta});
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text('Mensagem 12'),);
+    return Text(
+      resposta,
+      style: TextStyle(fontSize: 22),
+    );
   }
 }
 
