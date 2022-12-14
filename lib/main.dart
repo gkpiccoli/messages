@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'question.dart';
 
 main() => runApp(const MsgApp());
 
@@ -13,13 +12,13 @@ class MsgApp extends StatefulWidget {
 class _MsgAppState extends State<MsgApp> {
   var perguntaSelecionada = 0; // classe state
 
-  void resposta() {
+  void _resposta() {
     setState(() {
       perguntaSelecionada++;
     });
 
     // ignore: avoid_print
-    print(perguntaSelecionada); // metodo
+    print(perguntaSelecionada); // método
   }
 
   void Function() retornaOutra() {
@@ -47,15 +46,15 @@ class _MsgAppState extends State<MsgApp> {
           children: <Widget>[
             Text(perguntas[perguntaSelecionada]),
             ElevatedButton(
-              onPressed: resposta,
+              onPressed: _resposta,
               child: const Text('Resposta 1'),
             ),
             ElevatedButton(
-              onPressed: resposta,
+              onPressed: _resposta,
               child: const Text('Resposta 2'),
             ),
             ElevatedButton(
-              onPressed: resposta,
+              onPressed: _resposta,
               child: const Text('Resposta 3 '),
             ),
           ],
